@@ -1,0 +1,30 @@
+<header class="primary-header flex">
+  <h2 class="header-title">Cookies by HW</h2>
+  <button
+    class="mobile-nav-toggle"
+    aria-controls="primary-navigation"
+    (click)="handleClick()"
+    [attr.aria-expanded]="navToggle"
+  ></button>
+  <nav>
+<ul class="primary-navigation flex" [attr.data-visible]="dataVisible">
+      <li class="navigation-title">
+        <a (click)="handleMenuItemClick()" class="nav-title" routerLink="/">Cookies by HW</a>
+      </li>
+      <li>
+        <a (click)="handleMenuItemClick()" routerLink="order">Order</a>
+      </li>
+      <li>
+        <a (click)="handleMenuItemClick()" routerLink="about-us">About Us</a>
+      </li>
+      <li>
+        <a (click)="handleMenuItemClick()" routerLink="contact-us">Contact Us</a>
+      </li>
+      <li>
+        <a (click)="handleMenuItemClick()" routerLink="contact-us">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+<router-outlet></router-outlet>
